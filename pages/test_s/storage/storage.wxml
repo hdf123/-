@@ -1,0 +1,12 @@
+<input class="storage" bindinput ="userNameInput" placeholder="请输入你要保存的内容" />
+<view class="setStorage">
+  <button bindtap='save'>setStorage异步缓存</button>
+  <button bindtap='obtain'>getStorage异步获取指定 key</button>
+  <button bindtap='delete'>removeStorage清除指定数据</button>
+  <button bindtap='Clean'>clearStorage清理本地数据缓存</button>
+</view>
+<view>{{storage}}</view>
+<!-- Sync（同步，同时）结尾的都是都是同步缓存
+异步就是不管保没保存成功,程序都会继续往下执行.同步是等保存成功了,才会执行下面的代码.
+使用异步,性能会更好;而使用同步,数据会更安全 -->
+

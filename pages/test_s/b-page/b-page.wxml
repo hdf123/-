@@ -1,0 +1,11 @@
+<!--pages/page-callback/b-page/b-page.wxml-->
+<text class='currentPage'>当前页面:[b-page.wxml]</text>
+<view class='container'>
+    <text>{{name}}</text>
+</view>
+
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+     <view class="picker">
+        世界杯冠军：{{array[index]}}
+    </view> 
+</picker>

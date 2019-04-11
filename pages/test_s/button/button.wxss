@@ -1,0 +1,30 @@
+/** wxss **/
+/** 修改button默认的点击态样式类**/
+.button-hover {
+  background-color: red;
+}
+/** 添加自定义button点击态样式类**/
+.other-button-hover {
+  background-color: blue;
+}
+button {margin: 10px;}
+/* 模拟按钮 */
+.ros{
+  position:relative;
+  display:block;
+  padding-left:14px;
+  padding-right:14px;
+  box-sizing:border-box;
+  font-size:18px;
+  text-decoration:none;
+  line-height:2.55555556;
+  border-radius:5px;
+  -webkit-tap-highlight-color:transparent;
+  overflow:hidden;
+  background-color:#F8F8F8;
+  border:1rpx solid #d4d0d0;
+}
+.navs{
+  color:rgba(0, 0, 0, 0.6);
+  background-color:#DEDEDE;
+}

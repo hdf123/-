@@ -1,0 +1,5 @@
+/* pages/include/include.wxss */
+@import "../temp/temp.wxss";
+button{
+  width:50%;
+}

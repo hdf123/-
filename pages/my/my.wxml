@@ -1,0 +1,4 @@
+<view wx:for="{{directoryList}}" wx:key="id">
+    <button bindtap='back' data-url='{{item.url}}' wx:if="{{index<10}}">0{{index}}--{{item.directory}}</button>
+    <button bindtap='back' data-url='{{item.url}}' wx:else>{{index}}--{{item.directory}}</button>
+ </view>

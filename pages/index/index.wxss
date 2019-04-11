@@ -1,0 +1,4 @@
+.user-motto{
+  color: red;
+  text-align: center;
+}

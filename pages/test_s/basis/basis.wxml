@@ -1,0 +1,4 @@
+<button type="primary" bindtap='skp' style="width:30%">扫一扫</button>
+<button bindtap='stys' wx:if='{{mgs>5}}' bindtap='pds'>{{mgs}}</button>
+<button type="primary" bindtap='stys' wx:elif='{{mgs>2}}' bindtap='pds'>{{mgs}}</button>
+<text wx:else>现在变成1了，都不满足</text>

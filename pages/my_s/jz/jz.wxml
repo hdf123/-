@@ -1,0 +1,35 @@
+<!-- 考试科目 -->
+<view>请选择考试科目：</view>
+<view class='list-msg'>
+<!--下拉框  -->
+    <view class='list-msg2' bindtap='bindShowMsg'>
+        <text>{{tihuoWay}}</text>
+    </view>
+<!-- 下拉需要显示的列表 -->
+    <view class="select_box" wx:if="{{select}}">
+        <view class="select_one" bindtap="mySelect" data-name="科目1">科目1</view>
+        <view class="select_one" bindtap="mySelect" data-name="科目4">科目4</view>
+    </view>
+</view>
+
+
+<!-- 考试类型 -->
+<view wx:if="{{tihuoWay=='科目1'}}">
+  <view>请选择驾照类型：</view>
+  <view class='list-msg'>
+  <!--下拉框  -->
+      <view class='list-msg2' bindtap='bindShowMsg_s'>
+          <text>{{tihuoWay_s}}</text>
+      </view>
+  <!-- 下拉需要显示的列表 -->
+      <view class="select_box" wx:if="{{select_s}}">
+          <view class="select_one" bindtap="mySelect_s" data-name="a1">a1</view>
+          <view class="select_one" bindtap="mySelect_s" data-name="a2">a2</view>
+          <view class="select_one" bindtap="mySelect_s" data-name="b1">b1</view>
+          <view class="select_one" bindtap="mySelect_s" data-name="b2">b2</view>
+          <view class="select_one" bindtap="mySelect_s" data-name="c1">c1</view>
+          <view class="select_one" bindtap="mySelect_s" data-name="c2">c2</view>
+      </view>
+  </view>
+</view>
+<button type="primary" class="btn" bindtap='btn'>确定</button>

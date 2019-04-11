@@ -1,0 +1,68 @@
+{
+  "pages":[
+    "pages/my_s/jz/jz",
+    "pages/my_s/jzs/jzs",
+    "pages/index/index",
+    "pages/test/test",
+    "pages/test_s/basis/basis",
+    "pages/test_s/scroll/scroll",
+    "pages/test_s/swiper/swiper",
+    "pages/test_s/movable/movable",
+    "pages/test_s/icon/icon",
+    "pages/test_s/progress/progress",
+    "pages/test_s/button/button",
+    "pages/test_s/checkbox/checkbox",
+    "pages/test_s/form/form",
+    "pages/test_s/input/input",
+    "pages/test_s/redirect/redirect",
+    "pages/test_s/video/video",
+    "pages/test_s/camera/camera",
+    "pages/test_s/map/map",
+    "pages/test_s/canvas/canvas",
+    "pages/test_s/data/data",
+    "pages/test_s/b-page/b-page",
+    "pages/test_s/include/include",
+    "pages/test_s/navigator/navigator",
+    "pages/test_s/op/op",
+    "pages/test_s/switch/switch",
+    "pages/test_s/temp/temp",
+    "pages/test_s/registered/registered",
+    "pages/test_s/login/login",
+    "pages/test_s/forget/forget",
+    "pages/test_s/animation/animation",
+    "pages/test_s/storage/storage",
+    "pages/my/my"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "enablePullDownRefresh": true,
+    "navigationBarBackgroundColor": "#EA6F5A",
+    "navigationBarTitleText": "小程序测试",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#EA6F5A"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/img/shouye.png",
+      "selectedIconPath": "/img/shouye_a.png"
+    },{
+      "pagePath": "pages/test/test",
+      "text": "测试",
+      "iconPath": "/img/gouwu.png",
+      "selectedIconPath": "/img/gouwu_a.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "/img/wode.png",
+      "selectedIconPath": "/img/wode_a.png"
+    }]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

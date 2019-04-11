@@ -1,0 +1,5 @@
+<!--pages/include/include.wxml-->
+<import src="../temp/temp.wxml" />
+<button type="warn">include引用</button>
+<template is="temp1" />
+<template is="temp2"></template>

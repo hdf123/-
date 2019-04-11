@@ -1,0 +1,4 @@
+<view  class="user-motto">
+  <text>{{content.content}}</text>
+  <button bindtap='changeLanuage'>{{language}}</button>
+</view>

@@ -1,0 +1,17 @@
+.inp{
+  padding:10rpx 70rpx;
+}
+.inp>input{
+  padding:0 10rpx;
+  border:1rpx solid #cccccc;
+}
+.kup{
+  margin-top:20rpx;
+}
+.kup>view{
+  color:red;
+  padding:10rpx 20rpx;
+}
+.kup>view:nth-child(1){
+  border-bottom:1rpx solid #cccccc;
+}

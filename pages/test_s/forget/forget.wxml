@@ -1,0 +1,14 @@
+<view class="registered">
+  <input class="input" type="number" placeholder="请输入手机号" bindinput ="userNameInput" />
+  <button type='default' bindtap='registered'>{{code}}</button>
+</view>
+<view class="registered">
+  <input class="input" placeholder="请输入验证码" bindinput="codeInput" />
+</view>
+<view class="registered">
+  <input class="input" password placeholder="请输入密码" bindinput="passWdInput" />
+</view>
+<button type='primary' class="registereds" bindtap='registereds'>修改密码</button>
+<view class="registered">
+  你正在埋怨命运不眷顾，那请记住：命，是失败者的借口；运，是成功者的谦词
+</view>

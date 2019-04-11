@@ -1,0 +1,9 @@
+<navigator url="../tests/navigator/navigator?titles=navigate">navigator跳转到新页面带返回按钮,增加open-type="switchTab"则在当前页面打开+地址传参</navigator>
+
+
+<view wx:for="{{content.arr}}" wx:for-item="cell" wx:for-index="cellindex" wx:key="id">
+    <button bindtap='back' data-url='{{directoryList[cellindex].url}}' wx:if="{{cellindex<10}}">0{{cellindex}}--{{cell.directory}}</button>
+    <button bindtap='back' data-url='{{directoryList[cellindex].url}}' wx:else>{{cellindex}}--{{cell.directory}}</button>
+ </view>
+
+<button open-type='contact'>{{content.service}}</button>

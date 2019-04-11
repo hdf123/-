@@ -1,0 +1,12 @@
+/* pages/storage/storage.wxss */
+.storage{
+  width:70%;
+  height:70rpx;
+  border:1rpx solid #dddddd;
+  margin:0 auto;
+}
+.setStorage,.clearStorage{
+  width:90%;
+  border:1rpx solid #cccccc;
+  margin:40rpx auto;
+}

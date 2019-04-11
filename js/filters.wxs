@@ -1,0 +1,8 @@
+var filters = {
+  toFix: function (value,count) {
+    return value.toFixed(count)//此处是几就保留几位小数
+  }
+}
+module.exports = {
+  toFix: filters.toFix
+}

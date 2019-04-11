@@ -1,0 +1,8 @@
+<view class="inp">
+  <input placeholder="请输入要测得QQ号码"  bindinput ="qq" />
+</view>
+<button bindtap='test'>开始测试</button>
+<view class="{{test01!=''?'kup':''}}">
+  <view>{{test02}}</view>
+  <view>{{test01}}</view>
+</view>

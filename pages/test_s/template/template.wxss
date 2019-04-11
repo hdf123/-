@@ -1,0 +1,2 @@
+/* pages/template/template.wxss */
+ @import "../temp/temp.wxss"; /*引入template样式*/

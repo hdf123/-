@@ -1,0 +1,29 @@
+/* pages/page-callback/b-page/b-page.wxss */
+
+page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+
+.currentPage {
+    width: 100%;
+    height: 80rpx;
+    padding-left: 150rpx;
+    background-color: #0ff;
+    line-height: 80rpx;
+}
+
+.container {
+    width: 600rpx;
+    height: 300rpx;
+    background-color: #0ff;
+    margin-top: 80rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80rpx;
+}

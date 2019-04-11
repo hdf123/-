@@ -1,0 +1,26 @@
+<view class="jzs" wx:for="{{arrs}}" wx:key="id">
+  <view wx:if="{{index<9}}">0{{index+1}}:{{item.question}}</view>
+  <view wx:else>{{index+1}}:{{item.question}}</view>
+  <image src="{{item.url}}" wx:if="{{item.url!=''}}" mode='widthFix' />
+  <radio-group class="radio-group" bindchange="radioChange" data-answer="{{item.answer}}">
+    <label class="radio" wx:if="{{item.item1!=''}}" data-index="1">
+      <radio value="1" checked="{{item.checked}}" />
+      {{item.item1}}
+    </label>
+    <label class="radio" wx:if="{{item.item2!=''}}" data-index="2">
+      <radio value="2" checked="{{item.checked}}" />
+      {{item.item2}}
+    </label>
+    <label class="radio" wx:if="{{item.item3!=''}}" data-index="3">
+      <radio value="3" checked="{{item.checked}}" />
+      {{item.item3}}
+    </label>
+    <label class="radio" wx:if="{{item.item4!=''}}" data-index="4">
+      <radio value="4" checked="{{item.checked}}" />
+      {{item.item4}}
+    </label>
+  </radio-group>
+  <view class="rss" wx:if="{{state==1}}">{{item.explains}}</view>
+</view>
+<button bindtap="btn">确认提交</button>
+<view class="state">{{state}}</view>

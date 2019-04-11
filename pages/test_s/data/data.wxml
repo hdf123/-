@@ -1,0 +1,10 @@
+<!--pages/page-callback/a-page/a-page.wxml-->
+<text class='currentPage'>当前页面:[data.wxml]</text>
+<view class='container'>
+    <text>{{name}}</text>    
+    <text>{{dataFromB}}</text>
+</view>
+
+<button type = "primary" catchtap='goToPageB'>跳转到下一页</button>
+
+<button bindtap='goodbyeMINA'>9999999999999</button>

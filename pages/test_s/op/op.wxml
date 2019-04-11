@@ -1,0 +1,13 @@
+ <wxs module="filters" src="../../../js/filters.wxs"></wxs>
+<view>
+    <view>{{user.userInfo.nickName}}</view>
+    <view>{{user.userInfo.phone}}</view>
+    <!-- <view>{{filters.toFix(uid,2)}}</view> -->
+    <button bindtap="clickDemo">修改对象中的属性</button>
+    <button bindtap='helloMINA'>模块化</button>
+    <view>{{wxs}}</view>
+</view>
+<view class="input_box">
+  <view>原来的小数：{{uid}}</view>
+  <view>保留2位小数：{{filters.toFix(uid,2)}}</view>
+</view>

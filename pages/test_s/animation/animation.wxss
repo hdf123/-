@@ -1,0 +1,69 @@
+.animation-element-wrapper {
+  display: flex;
+  width: 100%;
+  padding-top: 50rpx;
+  padding-bottom: 50rpx;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.animation-element {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #1AAD19;
+  position:relative;
+  left:0;
+  top:0;
+}
+.animation-buttons {
+  padding: 30rpx 50rpx 10rpx;
+  width: 100%;
+  height: 700rpx;
+  box-sizing: border-box;
+}
+.animation-button {
+  float: left;
+  line-height: 2;
+  width: 300rpx;
+  margin: 15rpx 12rpx;
+}
+
+.animation-button-reset {
+  width: 620rpx;
+}
+.css_animation{
+  width:100%;
+  height: 100rpx;
+  background-color: #1AAD19;
+  text-align: center;
+  line-height:100rpx;
+ /** 第一种写法**/
+  /* animation-name: viewlinear;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; */
+  /** 第二种写法**/
+  animation: viewlinear 2s linear infinite;
+}
+@keyframes viewlinear {
+  
+  /** 第一种写法**/
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    background-color: yellow;
+  }
+
+
+  /** 第二种写法**/
+  /* from {
+    background-color: orange;
+  }
+  to {
+    background-color: red;
+  } */
+}
