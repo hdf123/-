@@ -10,6 +10,10 @@ Page({
     // tab切换  
     currentTab: 0,
   },
+  // 截获手动滑动
+  catchTouchMove: function (res) {
+    return false
+  },
   onLoad: function () {
     var that = this;
     /** 

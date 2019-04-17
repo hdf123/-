@@ -1,1 +1,9 @@
 /* pages/checkbox/checkbox.wxss */
+checkbox-group{
+  display: flex;
+  flex-direction: column;
+}
+.checkbox{
+  display: flex;
+  justify-content: space-between;
+}

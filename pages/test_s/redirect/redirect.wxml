@@ -6,8 +6,8 @@
 </view>  
   
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
-    <!-- 我是哈哈 -->  
-    <swiper-item>  
+    <!-- 我是哈哈>截获手动滑动 -->  
+    <swiper-item catchtouchmove='catchTouchMove'>  
       <view>我是哈哈</view>  
     </swiper-item>  
     <!-- 我是呵呵 -->  

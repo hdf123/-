@@ -1,10 +1,16 @@
 {
   "pages":[
+    "pages/test_s/swiper/swiper",
     "pages/index/index",
+    "pages/my_s/map/map",
+    "pages/my_s/maps/maps",
+    "pages/my_s/swiper/swiper",
+    "pages/my_s/juhe/juhe",
+    "pages/my_s/jz/jz",
     "pages/test/test",
     "pages/test_s/basis/basis",
     "pages/test_s/scroll/scroll",
-    "pages/test_s/swiper/swiper",
+    
     "pages/test_s/movable/movable",
     "pages/test_s/icon/icon",
     "pages/test_s/progress/progress",

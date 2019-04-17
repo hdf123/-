@@ -1,0 +1,10 @@
+<view class="swiperContainer">
+  <swiper bindchange="swiperChange"  autoplay="{{autoplay}}"  duration="{{duration}}" style='height: 380rpx;'>
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+      <swiper-item wx:key="*this">
+        <image src="{{item}}" class="slide-image"  class='img'  />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="imageCount">{{current+1}}/{{imgUrls.length}}</view>
+</view>

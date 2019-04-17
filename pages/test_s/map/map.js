@@ -11,12 +11,57 @@ Page({
     covers: [{
       latitude: 23.099994,
       longitude: 113.344520,
-      iconPath: '/image/location.png'
+      iconPath: '../../../img/location.png'
     }, {
       latitude: 23.099994,
       longitude: 113.304520,
-      iconPath: '/image/location.png'
+      iconPath: '../../../img/location.png'
     }]
+  },
+  test() {
+    // type：wgs84(是全球定位系统，获取的坐标，gcj02是国家测绘局给出的坐标)
+    wx.getLocation({
+      type: 'wgs84',// 默认wgs84
+      success: function (res) {
+        console.log(res);
+      },
+      fail: function (res) { },
+      complete: function () { }
+    });
+    // 第一个：wx.chooseLocation：可以打开地图进行选择，之后返回给 complete 
+    wx.getLocation({
+      success: function (res) {
+        console.log(res);
+
+        
+        // var latitude = res.latitude;
+        // var longitude = res.longitude;
+        // wx.chooseLocation({
+        //   latitude = latitude,
+        //   longitude = longitude,
+        //   success: function (res) {
+        //     console.log(res);
+        //   },
+        //   fail: function () { },
+        //   complete: function () { }
+        // });
+      }
+    });
+    // 第二个：wx.openLocation：使用微信内置地图查看位置
+    wx.getLocation({
+      success: function (res) {
+        console.log(res);
+
+        // var latitude = res.latitude;
+        // var longitude = res.longitude;
+        // wx.openLocation({
+        //   latitude = latitude,
+        //   longitude = longitude,
+        //   scale: 28
+        // });
+      }
+    });
+
   },
   onLoad: function () {
     wx: wx.setNavigationBarTitle({
@@ -29,7 +74,7 @@ Page({
   onReady: function (e) {
     this.mapCtx = wx.createMapContext('myMap')
   },
-  getCenterLocation: function () {
+  getCenterLocation: function () {//获取当前位置
     this.mapCtx.getCenterLocation({
       success: function (res) {
         console.log(res.longitude)

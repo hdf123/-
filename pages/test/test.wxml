@@ -1,4 +1,4 @@
-<navigator url="../tests/navigator/navigator?titles=navigate">navigator跳转到新页面带返回按钮,增加open-type="switchTab"则在当前页面打开+地址传参</navigator>
+<navigator url="../test_s/navigator/navigator?titles=navigate">navigator跳转到新页面带返回按钮,增加open-type="switchTab"则在当前页面打开+地址传参</navigator>
 
 
 <view wx:for="{{content.arr}}" wx:for-item="cell" wx:for-index="cellindex" wx:key="id">
