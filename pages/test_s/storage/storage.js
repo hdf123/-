@@ -41,6 +41,9 @@ Page({
   },
 
 
+  // ①e.currentTarget.dataset 代表的是，注册了监听点击事件的组件。在本例中，就是外层的View（包含了两个TextView）.
+  // ②e.target.dataset 代表的是，实际触发了点击事件的组件。
+
 
   // save:function(){
   //   wx.setStorage({

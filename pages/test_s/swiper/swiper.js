@@ -8,7 +8,8 @@ Page({
     interval: 2000,//自动播放间隔时长
     duration: 500,//幻灯片切换时长
     previousMargin: 0,//前边距
-    nextMargin: 0//后边距
+    nextMargin: 0,//后边距
+    current:0
   },
   onLoad:function(){
     wx:wx.setNavigationBarTitle({
@@ -17,6 +18,14 @@ Page({
       fail: function(res) {},
       complete: function(res) {},
     })
+  },
+  swiperChange: function (e) {
+    var that = this;
+    if (e.detail.source == 'touch') {
+      that.setData({
+        current: e.detail.current
+      })
+    }
   },
   changeProperty: function (e) {
     var propertyName = e.currentTarget.dataset.propertyName

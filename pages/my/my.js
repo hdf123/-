@@ -11,7 +11,8 @@ Page({
       { directory: "触摸水波涟漪效果", url: "../my_s/waves/waves" },
       { directory: "上拉加载，下拉刷新", url: "../my_s/juhe/juhe" },
       { directory: "QQ号码测吉凶", url: "../my_s/qq/qq" },
-      { directory: "驾照题库", url: "../my_s/jz/jz" }
+      { directory: "驾照题库", url: "../my_s/jz/jz" },
+      { directory: "地图", url: "../my_s/map/map" },
     ]
   },
   back: function (event) {

@@ -16,12 +16,16 @@ Page({
     var _this = this;
     var subjectk = options.subjectk;
     var typea = options.typea;
+    wx:wx.setNavigationBarTitle({
+      title: '科目'+subjectk,
+    })
     var params = {
       key: '9a3930332d730af04095cdfc6b1b701e',
       subject: subjectk,//选择考试科目类型，1：科目1；4：科目4
       model: typea,//驾照类型，可选择参数为：c1,c2,a1,a2,b1,b2；当subject=4时可省略
       testType: ''//测试类型，rand：随机测试（随机100个题目），order：顺序测试（所选科目全部题目）
     }
+     
     app.ajax(app.globalData.juheapi + "/jztk/query", "get", params, (res) => {
       console.log(res.data)
       if (res.data.error_code == 10012) {

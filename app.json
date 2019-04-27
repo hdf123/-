@@ -1,16 +1,14 @@
 {
-  "pages":[
-    "pages/test_s/swiper/swiper",
+  "pages": [
+    
     "pages/index/index",
-    "pages/my_s/map/map",
-    "pages/my_s/maps/maps",
-    "pages/my_s/swiper/swiper",
     "pages/my_s/juhe/juhe",
     "pages/my_s/jz/jz",
+    
     "pages/test/test",
     "pages/test_s/basis/basis",
     "pages/test_s/scroll/scroll",
-    
+    "pages/test_s/swiper/swiper",
     "pages/test_s/movable/movable",
     "pages/test_s/icon/icon",
     "pages/test_s/progress/progress",
@@ -37,36 +35,40 @@
     "pages/test_s/storage/storage",
     "pages/my/my"
   ],
-  "window":{
-    "backgroundTextStyle":"dark",
+  "window": {
+    "backgroundTextStyle": "dark",
     "enablePullDownRefresh": true,
     "navigationBarBackgroundColor": "#EA6F5A",
     "navigationBarTitleText": "小程序测试",
-    "navigationBarTextStyle":"white",
-    "backgroundColor":"#EA6F5A"
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#EA6F5A"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "/img/shouye.png",
-      "selectedIconPath": "/img/shouye_a.png"
-    },{
-      "pagePath": "pages/test/test",
-      "text": "测试",
-      "iconPath": "/img/gouwu.png",
-      "selectedIconPath": "/img/gouwu_a.png"
-    },
-    {
-      "pagePath": "pages/my/my",
-      "text": "我的",
-      "iconPath": "/img/wode.png",
-      "selectedIconPath": "/img/wode_a.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/img/shouye.png",
+        "selectedIconPath": "/img/shouye_a.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测试",
+        "iconPath": "/img/gouwu.png",
+        "selectedIconPath": "/img/gouwu_a.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/img/wode.png",
+        "selectedIconPath": "/img/wode_a.png"
+      }
+    ]
   },
   "permission": {
     "scope.userLocation": {
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
