@@ -1,11 +1,11 @@
 {
   "pages": [
-    
+    "pages/test/test",
     "pages/index/index",
     "pages/my_s/juhe/juhe",
     "pages/my_s/jz/jz",
     
-    "pages/test/test",
+    
     "pages/test_s/basis/basis",
     "pages/test_s/scroll/scroll",
     "pages/test_s/swiper/swiper",
