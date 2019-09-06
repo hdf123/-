@@ -14,7 +14,8 @@ Page({
   },
   bindShowMsg() {
     this.setData({
-      select: !this.data.select
+      select: !this.data.select,
+      select_s:false
     })
   },
   mySelect(e) {
@@ -26,7 +27,8 @@ Page({
   },
   bindShowMsg_s() {
     this.setData({
-      select_s: !this.data.select_s
+      select_s: !this.data.select_s,
+      select: false
     })
   },
   mySelect_s(e) {

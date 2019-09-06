@@ -14,7 +14,7 @@
 
 
 <!-- 考试类型 -->
-<view wx:if="{{tihuoWay=='科目1'}}">
+<view class="box" wx:if="{{tihuoWay=='科目1'}}">
   <view>请选择驾照类型：</view>
   <view class='list-msg'>
   <!--下拉框  -->
