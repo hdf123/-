@@ -36,7 +36,7 @@ Page({
       wx.showToast({
         title: '输入不能为空',
         icon: 'false',
-        image:'../../img/shibai.png',
+        image:'../../../img/shibai.png',
         duration: 2000
       }) 
     }else{
@@ -62,7 +62,7 @@ Page({
  */
 
   registereds:function(e){
-    console.log("用户名：" + this.data.userName + " 密码：" + this.data.userPwd + "验证码：" + this.data.code);
+    console.log("用户名：" + this.data.userName + " 密码：" + this.data.userPwd + "验证码：" + this.data.codes);
     var input1 = this.data.userName; // 获取当前表单元素输入框内容
     var input2 = md5.hexMD5(this.data.userPwd); // 获取当前表单元素输入框内容
     var input3 = this.data.codes; // 获取当前表单元素输入框内容
@@ -70,7 +70,7 @@ Page({
       wx.showToast({
         title: '输入不能为空',
         icon: 'false',
-        image: '../../img/shibai.png',
+        image: '../../../img/shibai.png',
         duration: 2000
       })
     }

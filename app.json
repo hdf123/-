@@ -3,8 +3,12 @@
     
 
     "pages/index/index",
+    "pages/my_s/rolling/rolling",
+    "pages/my_s/waves/waves",
     "pages/my_s/juhe/juhe",
+    "pages/my_s/map/map",
     "pages/my_s/jz/jz",
+    "pages/my_s/qq/qq",
     
     "pages/test/test",
     "pages/test_s/basis/basis",
@@ -45,6 +49,8 @@
     "backgroundColor": "#EA6F5A"
   },
   "tabBar": {
+    "color": "#333",
+    "selectedColor": "#00f",
     "list": [
       {
         "pagePath": "pages/index/index",
