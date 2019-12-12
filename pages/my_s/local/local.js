@@ -5,6 +5,8 @@ Page({
     // 页面配置 
     winWidth: 0,
     winHeight: 0,
+    Heia:0,
+    Heib:0,
     // tab切换  
     currentTab: 0,
     numa:20,
@@ -17,6 +19,17 @@ Page({
   },
   onLoad: function () {
     var that = this;
+    const query = wx.createSelectorQuery();
+    // 获取顶部和底部的高度
+    query.select('.swiper-tab').boundingClientRect()
+    query.select('.bosx').boundingClientRect()
+    query.exec((res)=>{
+      console.log(res);
+      that.setData({
+        Heia: res[0].height,
+        Heib: res[1].height,
+      })
+    })
     /** 
      * 获取系统信息 
      */
@@ -79,7 +92,6 @@ Page({
    */
   swichNav: function (e) {
     var that = this;
-    console.log(this.data.winHeight);
     if (this.data.currentTab === e.target.dataset.current) {
       return false;
     } else {
@@ -87,6 +99,7 @@ Page({
         currentTab: e.target.dataset.current
       })
     }
+    console.log(this.data.winHeight);
   },
   onReady: function () {
     

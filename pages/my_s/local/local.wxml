@@ -1,12 +1,12 @@
 <!-- redirect.wxml -->
 <view class="swiper-tab">  
     <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">哈哈</view>  
-    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">呵呵</view>  
-    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">嘿嘿</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">嘿嘿</view>  
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">拖动</view>  
 </view>  
 
 
-<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight -80}}px" bindchange="bindChange">  
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight-Heia-Heib}}px" bindchange="bindChange">  
     <!-- 我是哈哈 -->  
     <swiper-item class="box">  
       <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}};" class="list" bindscrolltolower="DownLoad1" bindscroll="scroll" bindscrolltoupper="refresh">
@@ -23,6 +23,7 @@
 
     <!-- 我是嘿嘿>截获手动滑动 -->  
     <swiper-item  catchtouchmove='catchTouchMove'>
+      <view class="size">截获手动滑动</view>
       <movable-area class="drag">
         <movable-view direction="all">all:任意</movable-view>
         <movable-view direction="vertical">vertical:纵向</movable-view>

@@ -4,7 +4,7 @@
   width: 100%;  
   height:80rpx;
   border-bottom: 2rpx solid #777777;  
-  text-align: center;  
+  text-align: center;
   line-height: 80rpx;
 }  
 .swiper-tab-list{  
@@ -20,16 +20,15 @@
 .swiper-box{
   display: block; 
   width: 100%; 
-  overflow: hidden; 
-}  
-.swiper-box view{  
-    text-align: center;  
+  
+  text-align: center;  
 }
 
 
 /* 上拉加载   */
 .box{
   height:1000rpx;
+  padding-bottom:100rpx;
   background:rgba(99,0,0,0.3);
 }
 .lists{
@@ -54,21 +53,23 @@ cover-image{
 
 
 /* 拖动 */
+.size{
+  text-align:center;
+  font-size:60rpx;
+}
 .drag{
   width:100%;
   height:600rpx;
-  background: rgba(255,0,0,1);
+  background: rgb(106, 97, 128);
   display:flex;
   justify-content: space-between;
 }
 .drag>movable-view{
   width:20%;
   height:100rpx;
-  background: rgba(99,0,0,0.6);
+  color:rgba(56, 45, 45,1);
+  background: rgba(240,238,245,1);
   position:static;
-  /* display:flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 
@@ -77,6 +78,7 @@ cover-image{
   width:100%;
   height:100rpx;
   border:1px solid red;
+  /* background:aqua; */
   position: fixed;
   left:0;
   bottom:0;
