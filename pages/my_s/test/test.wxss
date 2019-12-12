@@ -1,0 +1,68 @@
+/* pages/my_s/test/test.wxss */
+.selection1{
+width: 400rpx;
+height: 150rpx;
+background-color: grey;
+ 
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.selection2{
+width: 400rpx;
+height: 150rpx;
+background-color: blue;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.selection3{
+width: 400rpx;
+height: 150rpx;
+background-color: red;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.selection{
+width: 750rpx;
+height: 800rpx;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.aa{
+  color:red;
+}
+.bb{
+  color:lime;
+}
+/* 滚动通知 */
+.reports{
+	height: 60rpx;
+  padding:0 16rpx;
+  margin:26rpx 0 18rpx 0;
+  display: flex;
+  align-items: center;
+	background-color: #f1e4c7;
+}
+.reports image{
+  width: 29rpx;
+	height: 23rpx;
+}
+.swiper_container {
+  height: 55rpx;
+  width:100%;
+}
+.swiper_item {
+  font-size: 24rpx;
+  margin-left:25rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height:50rpx;
+}

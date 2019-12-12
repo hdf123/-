@@ -80,7 +80,7 @@ Page({
    */
   onPullDownRefresh: function () {
     this.joke();
-
+    console.log("下拉");
   },
 
   /**
@@ -89,15 +89,17 @@ Page({
   onReachBottom: function () {
     wx.showLoading({
       title: '加载中',
+      mask: true
     })
     setTimeout(function () {
       wx.hideLoading()
     }, 1000)
-    var _this = this;
+
     this.setData({
       menu: this.data.menu + 1
     })
     this.joke();
+    console.log("上拉");
   },
 
   /**

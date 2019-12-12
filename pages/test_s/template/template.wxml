@@ -1,3 +1,24 @@
 <!--pages/template/template.wxml-->
-<text>pages/template/template.wxml</text>
+<!-- import导入模板。 -->
+<text class="imps">import导入模板</text>
+<view class="btn_box">
+  <import src="../include/include.wxml" />
+  <template is="temp1" />
+  <template is="temp2"></template>
+  <template is="temp3" />
+</view>
+
+<!-- includes导入除模板以外的内容。 -->
+<text class="imps">includes导入除模板以外的内容</text>
 <include src="../include/include.wxml" />
+
+
+<view class="content">
+    <button bindtap="popSuccessTest">成功提示弹窗</button>
+    <button bindtap="popMaskTest">带透明蒙层的弹窗</button>
+    <button bindtap="popTest">纯文字弹窗</button>
+    <button bindtap="popCustomIcon">自定义图标</button>
+    <button bindtap="popConfirm">confirm的弹窗</button>
+    <button bindtap="popLoading">加载弹窗</button>
+    <button bindtap="popSelect">选择框弹窗</button>
+</view>

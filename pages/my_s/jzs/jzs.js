@@ -6,7 +6,8 @@ Page({
    */
   data: {
     arrs: [],
-    state:''
+    state:'',
+    arr1:[]
   },
 
   /**
@@ -44,18 +45,27 @@ Page({
     }, (res) => { });
   },
   radioChange(e) {
+    //正确答案
     var answer = e.currentTarget.dataset.answer;
+    //下标
+    var inds = e.currentTarget.dataset.index;
+    //选择
     var index = e.detail.value;
+    console.log("下标：" + inds);
     console.log("正确答案是：" + answer);
     console.log("选择的是：" + index);
     if (e.detail.value == answer) {
       console.log("选择正确");
     } else {
       console.log("选择错误");
+      this.data.arr1.push(inds);
+      console.log(this.data.arr1);
+
     }
   },
-  btn(){
+  btn(){/*提交后提示哪些选择错误*/
     console.log(123);
+    
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

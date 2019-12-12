@@ -1,5 +1,14 @@
 <!--pages/include/include.wxml-->
-<import src="../temp/temp.wxml" />
-<button type="warn">include引用</button>
-<template is="temp1" />
-<template is="temp2"></template>
+<!-- 模板 -->
+<template name="temp1">
+  <button type="primary" class="btn btn1" bindtap='btn1'>模板1</button>
+</template>
+<template name="temp2">
+  <button type="warn" class="btn btn2" bindtap='btn2'>模板2</button>
+</template>
+<template name="temp3">
+  <button type="default" class="btn btn3">模板3</button>
+</template>
+
+
+<button type="warn" class="btn">include</button>

@@ -1,0 +1,19 @@
+<view class='selection'>
+  <view class='{{view1}}' bindtap='view1Click' id='1'>a</view>
+  <view class='{{view2}}' bindtap='view2Click' id='2'>b</view>
+  <view class='{{view3}}' bindtap='view3Click' id='3'>c</view>
+  <view class='{{view4}}' bindtap='view4Click' id='4'>d</view>
+</view>
+<view class="{{key==2?'aa':'bb'}}">123</view>
+<view wx:if="{{key==3}}">456</view>
+
+  <view class="reports">
+    <image src='../../../img/information.png' mode='widthFix' />
+    <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+      <block wx:for="{{msgList}}" wx:key="{{ids}}">
+        <swiper-item>
+          <view class="swiper_item">{{item.title}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>

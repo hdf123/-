@@ -10,7 +10,7 @@ Page({
     // tab切换  
     currentTab: 0,
   },
-  // 截获手动滑动
+//“ 哈哈”截获手动滑动
   catchTouchMove: function (res) {
     return false
   },

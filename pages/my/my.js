@@ -13,6 +13,8 @@ Page({
       { directory: "QQ号码测吉凶", url: "../my_s/qq/qq" },
       { directory: "驾照题库", url: "../my_s/jz/jz" },
       { directory: "地图", url: "../my_s/map/map" },
+      { directory: "测试", url: "../my_s/test/test" },
+      { directory: "局部上拉刷新加载", url: "../my_s/local/local" },
     ]
   },
   back: function (event) {

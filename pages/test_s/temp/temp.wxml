@@ -1,8 +1,0 @@
-<!--pages/temp/temp.wxml-->
-<text>pages/temp/temp.wxml</text>
-<template name="temp1">
-  <button type="primary" class="btn btn1" bindtap='btn1'>template模板1</button>
-</template>
-<template name="temp2">
-  <button type="warn" class="btn btn2">template模板2</button>
-</template>

@@ -1,5 +1,0 @@
-/* pages/temp/temp.wxss */
-button{
-  width:50%;
-  margin-bottom:10px;
-}
