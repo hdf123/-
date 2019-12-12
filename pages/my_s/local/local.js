@@ -7,13 +7,13 @@ Page({
     winHeight: 0,
     // tab切换  
     currentTab: 0,
-    nums:20,
-    trus:true,
+    numa:20,
+    trua:true,
     scrollHeight:"100%"
   },
   //“ 哈哈”截获手动滑动
   catchTouchMove: function (res) {
-    return false
+    return false;
   },
   onLoad: function () {
     var that = this;
@@ -39,31 +39,25 @@ Page({
   onShow: function () {
     console.log(1);
   },
-  bindDownLoad: function () {
-    console.log(2);
+  DownLoad1: function () {
+    console.log('到底了---');
     var _this = this; 
-    console.log(_this.data.trus);
-    
-    if (_this.data.trus){
+    if (_this.data.trua){
       _this.popMaskTest();
-      _this.setData({ trus: false});
+      _this.setData({ trua: false});
       setTimeout(function (){
         _this.setData({
-          nums: _this.data.nums + 20,
-          trus:true,
+          numa: _this.data.numa + 20,
+          trua:true,
         });
       },2000);
     }
-
-
-
-    
   },
   scroll: function (event) {
     console.log(3);
   },
   refresh: function (event) {
-    console.log(4);
+    console.log("到顶了---");
   },
   popMaskTest: function () {
     wx.showToast({
@@ -95,13 +89,12 @@ Page({
     }
   },
   onReady: function () {
-    console.log(11);
+    
   },
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    this.joke();
     console.log("下拉");
   },
   /**

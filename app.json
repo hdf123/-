@@ -42,7 +42,6 @@
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "enablePullDownRefresh": true,
     "navigationBarBackgroundColor": "#EA6F5A",
     "navigationBarTitleText": "小程序测试",
     "navigationBarTextStyle": "white",

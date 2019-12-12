@@ -1,4 +1,5 @@
 /* redirect/redirect.wxss */
+/* tab切换 */
 .swiper-tab{  
   width: 100%;  
   height:80rpx;
@@ -19,12 +20,14 @@
 .swiper-box{
   display: block; 
   width: 100%; 
-  /* height:1000rpx!important; */
   overflow: hidden; 
 }  
 .swiper-box view{  
     text-align: center;  
-}  
+}
+
+
+/* 上拉加载   */
 .box{
   height:1000rpx;
   background:rgba(99,0,0,0.3);
@@ -32,8 +35,44 @@
 .lists{
   height:90rpx;
   line-height:90rpx;
-  border-bottom:1rpx solid rgba(99,0,0,0.6);
+  border-bottom:1rpx solid rgba(99,0,0,0.3);
 }
+
+
+/* cover-view */
+.cover{
+  width:100%;
+  height:100%;
+  background: rgba(0, 96, 99, 0.3);
+}
+cover-image{
+  width:30%;
+  height:auto;
+}
+
+
+
+
+/* 拖动 */
+.drag{
+  width:100%;
+  height:600rpx;
+  background: rgba(255,0,0,1);
+  display:flex;
+  justify-content: space-between;
+}
+.drag>movable-view{
+  width:20%;
+  height:100rpx;
+  background: rgba(99,0,0,0.6);
+  position:static;
+  /* display:flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+
+/* 页底 */
 .bosx{
   width:100%;
   height:100rpx;
@@ -41,4 +80,9 @@
   position: fixed;
   left:0;
   bottom:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:50rpx;
+  font-weight:bold;
 }

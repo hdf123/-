@@ -4,22 +4,32 @@
     <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">呵呵</view>  
     <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">嘿嘿</view>  
 </view>  
-  
+
+
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight -80}}px" bindchange="bindChange">  
-    <!-- 我是哈哈>截获手动滑动 -->  
-    <swiper-item class="box" catchtouchmove='catchTouchMove'>  
-      <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}};" class="list" bindscrolltolower="bindDownLoad" bindscroll="scroll" bindscrolltoupper="refresh">
-        <view class="lists" wx:for="{{nums}}" wx:key="id">{{index+1}}</view>  
+    <!-- 我是哈哈 -->  
+    <swiper-item class="box">  
+      <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}};" class="list" bindscrolltolower="DownLoad1" bindscroll="scroll" bindscrolltoupper="refresh">
+        <view class="lists" wx:for="{{numa}}" wx:key="id">{{index+1}}</view>  
       </scroll-view>
     </swiper-item>  
+
     <!-- 我是呵呵 -->
     <swiper-item>  
-      <view>我是呵呵</view>  
+      <cover-view class="covers">
+        <cover-image src="../../../img/correct.png"></cover-image>
+      </cover-view>
     </swiper-item>  
-    <!-- 我是嘿嘿 -->  
-    <swiper-item>  
-      <view>我是嘿嘿</view>  
+
+    <!-- 我是嘿嘿>截获手动滑动 -->  
+    <swiper-item  catchtouchmove='catchTouchMove'>
+      <movable-area class="drag">
+        <movable-view direction="all">all:任意</movable-view>
+        <movable-view direction="vertical">vertical:纵向</movable-view>
+        <movable-view direction="horizontal">horizontal:横向</movable-view>
+        <movable-view direction="none">none :禁止</movable-view>
+      </movable-area>
     </swiper-item>  
 </swiper>
 
-<view class="bosx"></view>
+<view class="bosx">页底</view>
