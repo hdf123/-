@@ -7,22 +7,22 @@
 
 
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight-Heia-Heib}}px" bindchange="bindChange">  
-    <!-- 我是哈哈 -->  
-    <swiper-item class="box">  
-      <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}};" class="list" bindscrolltolower="DownLoad1" bindscroll="scroll" bindscrolltoupper="refresh">
-        <view class="lists" wx:for="{{numa}}" wx:key="id">{{index+1}}</view>  
+    <!-- 我是哈哈 -->
+    <swiper-item class="box">
+      <scroll-view scroll-top="{{scrollTop}}" scroll-y="{{ksk}}" style="height:{{scrollHeight}};" class="list" bindscrolltolower="DownLoad1" bindscroll="scroll" bindscrolltoupper="refresh">
+        <view class="lists" wx:for="{{numa}}" wx:key="id">{{index+1}}</view>
       </scroll-view>
-    </swiper-item>  
+    </swiper-item>
 
-    <!-- 我是呵呵 -->
-    <swiper-item>  
+    <!-- 我是嘿嘿 -->
+    <swiper-item>
       <cover-view class="covers">
         <cover-image src="../../../img/correct.png"></cover-image>
       </cover-view>
     </swiper-item>  
 
-    <!-- 我是嘿嘿>截获手动滑动 -->  
-    <swiper-item  catchtouchmove='catchTouchMove'>
+    <!-- 我是拖动>截获手动滑动 -->  
+    <swiper-item catchtouchmove='catchTouchMove'>
       <view class="size">截获手动滑动</view>
       <movable-area class="drag">
         <movable-view direction="all">all:任意</movable-view>

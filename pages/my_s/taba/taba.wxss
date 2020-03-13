@@ -1,0 +1,4 @@
+/* pages/my_s/taba/taba.wxss */
+/*引入wxss*/
+@import '../tabb/tabb.wxss';
+

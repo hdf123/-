@@ -1,8 +1,16 @@
 <view class="inp">
-  <input placeholder="请输入要测得QQ号码"  bindinput ="qq" />
+  <input placeholder="请输入要测得QQ号码" bindinput ="qq" />
 </view>
 <button bindtap='test'>开始测试</button>
-<button open-type="share">分享</button>
+
+
+  <button open-type="share" title="今晚打老虎1" class="btn" hover-class="none">
+    <image src="../../../img/gouwu_a.png"></image>
+
+  </button>
+
+
+<!-- <button open-type="share">分享</button> -->
 <view class="{{test01!=''?'kup':''}}">
   <view>{{test02}}</view>
   <view>{{test01}}</view>

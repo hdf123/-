@@ -9,6 +9,9 @@ Page({
     few:5,
     state:''
   },
+  tas:function(){
+    console.log(111);
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -91,7 +94,7 @@ Page({
       title: '加载中',
       mask: true
     })
-    setTimeout(function () {
+    setTimeout(function (){
       wx.hideLoading()
     }, 1000)
 

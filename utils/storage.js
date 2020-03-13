@@ -1,5 +1,6 @@
+// 时间：秒
 var dtime = '_deadtime';
-function put(k, v, t) {
+function put(k, v, t) {//名称、内容、保存时间
   wx.setStorageSync(k, v)
   var seconds = parseInt(t);
   if (seconds > 0) {
@@ -11,7 +12,7 @@ function put(k, v, t) {
   }
 }
 
-function git(k, def) {
+function git(k, def) {//名称，没有结果时输出
   var deadtime = parseInt(wx.getStorageSync(k + dtime))
   if (deadtime) {
     if (parseInt(deadtime) < Date.parse(new Date()) / 1000) {
@@ -20,8 +21,10 @@ function git(k, def) {
   }
   var res = wx.getStorageSync(k);
   if (res) {
+    console.log(1);
     return res;
   } else {
+    console.log(2);
     return def;
   }
 }

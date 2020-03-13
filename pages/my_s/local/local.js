@@ -11,7 +11,9 @@ Page({
     currentTab: 0,
     numa:20,
     trua:true,
-    scrollHeight:"100%"
+    scrollTop:0,
+    scrollHeight:"100%",
+    ksk:false
   },
   //“ 哈哈”截获手动滑动
   catchTouchMove: function (res) {
@@ -48,10 +50,11 @@ Page({
       complete: function (res) {},
     })
   },
-
-  onShow: function () {
-    console.log(1);
-  },
+  /**
+   * 页面显示时触发
+   */
+  onShow: function () {},
+  
   DownLoad1: function () {
     console.log('到底了---');
     var _this = this; 
@@ -90,6 +93,8 @@ Page({
   /** 
    * 点击tab切换 
    */
+  // e.target.dataset.current：事件内没有其他元素
+  //e.currentTarget.dataset.current：事件内包含其他元素
   swichNav: function (e) {
     var that = this;
     if (this.data.currentTab === e.target.dataset.current) {
@@ -99,7 +104,8 @@ Page({
         currentTab: e.target.dataset.current
       })
     }
-    console.log(this.data.winHeight);
+    console.log(e.target.dataset.current);
+    console.log(e.currentTarget.dataset.current);
   },
   onReady: function () {
     

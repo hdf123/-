@@ -6,7 +6,7 @@
   border:1rpx solid #cccccc;
 }
 .kup{
-  margin-top:20rpx;
+  margin-top:100rpx;
 }
 .kup>view{
   color:red;
@@ -14,4 +14,16 @@
 }
 .kup>view:nth-child(1){
   border-bottom:1rpx solid #cccccc;
+}
+.btn{
+  width:100%;
+  height:100rpx;
+  border:none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn>image{
+  width:50rpx;
+  height:50rpx;
 }

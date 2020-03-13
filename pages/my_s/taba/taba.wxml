@@ -1,0 +1,4 @@
+<!--引入定义的模板-->
+<import src="../tabb/tabb" />
+<!-- is 指向定义template时候的name属性值   data="{{模板定义时候需要用到的属性，直接在这里写就能用到index.js里的数据}}-->
+<template is="tem" data="{{tab,index}}"></template>

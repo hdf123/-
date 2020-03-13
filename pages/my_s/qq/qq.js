@@ -10,6 +10,7 @@ Page({
     test02:''
   },
   qq: function (e) {//获取input的值,手机号
+    console.log(e);
     this.setData({
       qq: e.detail.value
     })
@@ -51,15 +52,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // var params={
-    //   key:'402c12a520e3327bb74eb0d529f9d627',
-    //   qq:'1205552014'
-    // }
-    // app.ajax(app.globalData.juheqq + "/qqevaluate/qq", "get", params, (res) => {
-    //   console.log(res.data)
-    // }, (res) => {
-    //   console.log(err);
-    // }, (res) => { });
+
   },
 
   /**
@@ -107,7 +100,15 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
+  onShareAppMessage: function (res) {
+    if(res.from=="button"){
+      //来自页面转发按钮
+      console.log(res.target,res);
+    }
+    return {
+      title:"今晚打老虎2",
+      path:'pages/index/index',
+      imageUrl:'../../../img/shibai.png'
+    }
   }
 })

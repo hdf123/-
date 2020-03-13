@@ -42,7 +42,7 @@ Page({
     }
   },
   back: function (event) {
-    console.log(event.currentTarget.dataset.url);
+    // console.log(event.currentTarget.dataset.url);
     wx.navigateTo({
       title: "goback",
       url: event.currentTarget.dataset.url,

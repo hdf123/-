@@ -70,6 +70,27 @@ Page({
       fail: function (res) { },
       complete: function (res) { },
     })
+
+    var _this = this;
+    wx.getLocation({
+      type: 'gcj02',// 默认wgs84
+      altitude: true,//高精度定位
+      success: function (res) {
+        console.log(res);
+        var lat = "markers[0].latitude";
+        var lon = "markers[0].longitude";
+        _this.setData({
+          latitude: res.latitude,
+          longitude: res.longitude,
+          [lat]: res.latitude,
+          [lon]: res.longitude
+        })
+      },
+      fail: function (res) { },
+      complete: function () { }
+    });
+
+
   },
   onReady: function (e) {
     this.mapCtx = wx.createMapContext('myMap')

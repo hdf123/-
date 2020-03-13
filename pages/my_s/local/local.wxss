@@ -13,7 +13,7 @@
   width: 33.33%;
   color: #777777;  
 }  
-.on{ 
+.on>view{ 
   color: #da7c0c;  
   border-bottom: 5rpx solid #da7c0c;
 }  

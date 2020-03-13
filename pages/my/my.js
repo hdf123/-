@@ -15,6 +15,7 @@ Page({
       { directory: "地图", url: "../my_s/map/map" },
       { directory: "测试", url: "../my_s/test/test" },
       { directory: "局部刷新加载、拖动", url: "../my_s/local/local" },
+      { directory: "切换", url: "../my_s/taba/taba" },
     ]
   },
   back: function (event) {

@@ -1,5 +1,5 @@
 <block wx:for="{{arrs}}" wx:key="id">
-  <view class="bk" wx:if="{{index<9}}">0{{index+1}}:{{item.content}}</view>
+  <view class="bk" bindtap="tas" wx:if="{{index<9}}">0{{index+1}}:{{item.content}}</view>
   <view class="bk" wx:else>{{index+1}}:{{item.content}}</view>
 </block>
 <view class="state">{{state}}</view>

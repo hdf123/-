@@ -47,15 +47,9 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "pages/test_s/template/template",
-					"pathName": "pages/test_s/template/template",
+					"name": "pages/my_s/map/map",
+					"pathName": "pages/my_s/map/map",
 					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/my_s/local/local",
-					"pathName": "pages/my_s/local/local",
 					"scene": null
 				}
 			]

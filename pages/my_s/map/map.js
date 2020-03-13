@@ -1,86 +1,55 @@
 Page({
   data: {
-    latitude: 34.74606758446534,
-    longitude: 113.63097634045808,
+    latitude1:34.7691233090938,
+    longitude1:113.7734055519104,
+    latitude2:34.7691233090938,
+    longitude2:113.7734055519104,
     markers: [{
       id: 1,
-      latitude: 34.74725,
-      longitude: 113.62493,
-      name: '士大夫'
+      latitude:34.7691233090938,
+      longitude:113.7734055519104,
+      label:{
+      // callout:{
+        content: " 1今晚打老虎",  //文本
+        color: '#FF0202',  //文本颜色
+        borderRadius: 3,  //边框圆角
+        borderWidth: 1,  //边框宽度
+        borderColor: '#FF0202',  //边框颜色
+        padding: 5,  //文本边缘留白
+        // display: 'ALWAYS',
+        anchorX:-40,
+        anchorY:-10,
+        textAlign: 'center'  //文本对齐方式。有效值: left, right, center
+      }
+    },{
+      id: 2,
+      latitude:34.768255,
+      longitude:113.773063,
+      label:{
+      // callout:{
+        content: " 2今晚打老虎",
+        padding: 10,
+        // display: 'ALWAYS',
+        textAlign: 'center'
+      }
     }],
-    covers: [{
-      latitude: 23.099994,
-      longitude: 113.344520,
-      iconPath: '../../../img/location.png'
-    }, {
-      latitude: 23.099994,
-      longitude: 113.304520,
-        iconPath: '../../../img/location.png'
+    circles:[{
+      latitude:0,
+      longitude:0,
+      color: '#FF0000DD',
+      fillColor: '#7cb5ec66',
+      radius:200,
+      strokeWidth:1
     }]
   },
   onReady: function (e) {
-    this.mapCtx = wx.createMapContext('myMap')
+    
   },
-  test() {
-
-    wx.getLocation({
-      type: 'gcj02',// 默认wgs84
-      altitude: true,//高精度定位
-      success: function (res) {
-        console.log(res);
-        
-      },
-      fail: function (res) { },
-      complete: function () { }
-    });
+  cdts1:function(e){
+    console.log(e);
   },
-  /**
-   * 获取位置
-   */
-  getCenterLocation: function () {
-    var _this = this;
-    this.mapCtx.getCenterLocation({
-      success: function (res) {
-        console.log(res.longitude)
-        console.log(res.latitude)
-        _this.setData({
-          latitude: res.latitude,
-          longitude: res.longitude,
-        })
-      }
-    })
-  },
-  /**
-   * 移动位置
-   */
-  moveToLocation: function () {
-    this.mapCtx.moveToLocation()
-  },
-  translateMarker: function () {
-    this.mapCtx.translateMarker({
-      markerId: 1,
-      autoRotate: true,
-      duration: 1000,
-      destination: {
-        latitude: 23.10229,
-        longitude: 113.3345211,
-      },
-      animationEnd() {
-        console.log('animation end')
-      }
-    })
-  },
-  includePoints: function () {
-    this.mapCtx.includePoints({
-      padding: [10],
-      points: [{
-        latitude: 23.10229,
-        longitude: 113.3345211,
-      }, {
-        latitude: 23.00229,
-        longitude: 113.3345211,
-      }]
-    })
+  cdts2:function(e){
+    console.log(e);
   },
   onLoad: function (options) {
     /**
@@ -90,17 +59,15 @@ Page({
     wx.getLocation({
       type: 'gcj02',// 默认wgs84
       altitude: true,//高精度定位
-      success: function (res) {
+      success: function (res){
         console.log(res);
-        var kk = "markers[0].latitude";
-        var ff = "markers[0].longitude";
-
-
+        var lat=res.latitude;
+        var lon=res.longitude;
         _this.setData({
-          latitude: res.latitude,
-          longitude: res.longitude,
-          [kk]: res.latitude,
-          [ff]: res.longitude
+          latitude2:lat,
+          longitude2:lon,
+         ['circles[0].latitude']:lat,
+         ['circles[0].longitude']:lon
         })
       },
       fail: function (res) { },
